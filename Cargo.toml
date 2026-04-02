@@ -1,0 +1,34 @@
+[package]
+name = "loopb34ts"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = { version = "0.21", features = ["csr"] }
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = [
+    "AudioContext",
+    "AudioBuffer",
+    "AudioBufferSourceNode",
+    "GainNode",
+    "AudioDestinationNode",
+    "AudioParam",
+    "Window",
+    "Response",
+    "Request",
+    "RequestInit",
+    "RequestMode",
+    "Headers",
+    "HtmlInputElement",
+    "InputEvent",
+    "console"
+] }
+js-sys = "0.3"
+wasm-bindgen-futures = "0.4"
+gloo = "0.11"
+wasm-logger = "0.2"
+log = "0.4"
+
+[features]
+default = ["csr"]
+csr = ["yew/csr"]

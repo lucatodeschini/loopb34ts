@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoopB34ts - Rust WASM Drum Sequencer</title>
+    <link rel="stylesheet" href="/style-371991f3ab7a37bf.css" integrity="sha384-JISZ+v121moC1xOIStwbp4nzWgDt5XJ1crlyXZ2yew0iEC0dbAAO08aLEnBCHy0a"/>
+    
+    
+    
+    
+    
+    
+  <link rel="modulepreload" href="/loopb34ts-f8e692ac90505b7b.js" crossorigin="anonymous" integrity="sha384-JkxOa26iH0ISAJi3I9OjzeCdsEAdHhnRBvlmO1KzXC6aPQ8lZ7oOsRQ50NXVJQXq"><link rel="preload" href="/loopb34ts-f8e692ac90505b7b_bg.wasm" crossorigin="anonymous" integrity="sha384-bbmG3gFwggPktH2L4C7uAiT7/sAMM8b2MJdzjqWEFrZpDW/naD8ifLY0Ufnw8E/7" as="fetch" type="application/wasm"></head>
+  <body>
+  
+<script type="module">
+import init, * as bindings from '/loopb34ts-f8e692ac90505b7b.js';
+const wasm = await init({ module_or_path: '/loopb34ts-f8e692ac90505b7b_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
