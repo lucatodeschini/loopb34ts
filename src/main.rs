@@ -40,7 +40,7 @@ impl AudioEngine {
         let mut buffers = HashMap::new();
         
         for sound in DRUM_SOUNDS.iter() {
-            let url = format!("/samples/{}.wav", sound.id);
+            let url = format!("/{}.wav", sound.id);
             if let Ok(buffer) = Self::load_sample(&context, &url).await {
                 buffers.insert(sound.id, buffer);
             }
